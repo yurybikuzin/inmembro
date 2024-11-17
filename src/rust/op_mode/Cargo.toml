@@ -1,0 +1,19 @@
+[package]
+name = "op_mode"
+version = "0.4.0"
+# 0.4.0 - added 'pub fn domain_op_mode_route', made 'const RE_HREF_STR' pub
+# 0.3.0 - removed "local." adding prefix, now fn ws_url assumes getting local host: let host = window().unwrap_throw().location().host().unwrap_throw();`
+# 0.2.0 - added fn from_window_location, fn ws_url; removed fn route_prefix, fn fn from_pathname_client, fn from_pathname_server, fn from_pathname_server_opt
+# 0.1.0 - initial
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = { workspace = true }
+tracing = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+strum = { workspace = true, features = ["derive"] }
+common_macros = { workspace = true }
+lazy_static = { workspace = true }
+regex = { workspace = true }

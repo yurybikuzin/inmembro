@@ -1,0 +1,13 @@
+target
+obsolete
+data
+node_modules
+*.version
+*.gz
+*.csv
+*.DS_Store
+*.idea
+_*
+~*
+*~
+.~*
